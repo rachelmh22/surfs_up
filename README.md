@@ -17,3 +17,15 @@ The June results suggest that the temperatures would be ideal for people to enjo
 
 ### Additional Queries
 I would perform queries to understand the precipitation for those two months. This additional data would give a fuller picture of the weather in these months since temperature as well as rain can affect the store. 
+
+#### Query for June Precipitation
+‘’’
+june_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+june_prcp_list = list(june_prcp)
+
+juneprcp_df = pd.DataFrame(june_prcp_list, columns=['date','precipitation'])
+juneprcp_df.set_index(juneprcp_df['date'], inplace=True)
+juneprcp_df = juneprcp_df.sort_index()
+
+juneprcp_df.describe()
+‘’’

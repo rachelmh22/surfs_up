@@ -9,6 +9,8 @@ The purpose of this project is to analyze the weather in a certain location in H
 ![June Temp](/June_temp.png)
 
 - The December results show an average temperature of 71 degrees Fahrenheit. While this temperature will allow for a good day at the beach, the lowest recorded temperature is 56 degrees Fahrenheit. This may discourage business as it may be too cold. However, since the average is normal 71 degrees Fahrenheit, December would still generate good business but with possibly slower days than in June. 
+![Dec Temp](/Dec_temp.png)
+
 
 - The average temperatures in both months are fairly close and even the highest recorded temperature in each month is similar. The weather stays consistent year round, as the results suggest.
 
@@ -30,6 +32,7 @@ juneprcp_df = juneprcp_df.sort_index()
 
 juneprcp_df.describe()
 ```
+![June Prcp](/June_prcp.png)
 
 #### Query for December Precipitation
 ```
@@ -42,3 +45,4 @@ decprcp_df = decprcp_df.sort_index()
 
 decprcp_df.describe()
 ```
+![Dec Prcp](/Dec_prcp.png)

@@ -29,3 +29,15 @@ juneprcp_df = juneprcp_df.sort_index()
 
 juneprcp_df.describe()
 ```
+
+#### Query for December Precipitation
+```
+dec_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+dec_prcp_list = list(dec_prcp)
+
+decprcp_df = pd.DataFrame(dec_prcp_list, columns=['date','precipitation'])
+decprcp_df.set_index(decprcp_df['date'], inplace=True)
+decprcp_df = decprcp_df.sort_index()
+
+decprcp_df.describe()
+```

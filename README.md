@@ -6,6 +6,7 @@ The purpose of this project is to analyze the weather in a certain location in H
 
 ## Results
 - As seen in the June temperature results, the average temperature in June is 75 degrees Fahrenheit with the lowest temperature recorded at 64 and highest at 85. These temperatures would allow for a good day in the ocean.
+![June Temp](/June_temp.png)
 
 - The December results show an average temperature of 71 degrees Fahrenheit. While this temperature will allow for a good day at the beach, the lowest recorded temperature is 56 degrees Fahrenheit. This may discourage business as it may be too cold. However, since the average is normal 71 degrees Fahrenheit, December would still generate good business but with possibly slower days than in June. 
 
